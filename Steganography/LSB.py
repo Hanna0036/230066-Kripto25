@@ -79,10 +79,8 @@ def decode(stego_image_path):
     except Exception as e:
         print(f"Terjadi kesalahan saat decode: {e}")
 
-
 if __name__ == "__main__":
     mode = input("Pilih mode ('encode' atau 'decode'): ").lower()
-
     if mode == 'encode':
         cover_image = input("Masukkan nama file gambar (e.g., cover.png): ")
         message = input("Masukkan pesan rahasia: ")
